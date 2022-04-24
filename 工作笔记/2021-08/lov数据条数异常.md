@@ -1,6 +1,6 @@
 当一个员工被维护了多个岗位时，由于员工id的重复会导致渲染问题
 
-![image-20210825185038512](C:\Users\Ric\AppData\Roaming\Typora\typora-user-images\image-20210825185038512.png)
+![image-20210825185038512](https://pic-1255740060.cos.ap-shanghai.myqcloud.com/MarkDown/img/20220424175248.png)
 
 解决：
 
