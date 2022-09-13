@@ -12,7 +12,6 @@
 
 但是对于一些客户而言，他们可能并不喜欢这两类解决方案，他们可能更希望每一个条目在X轴上都有对应的类目名，而非这样需要滑动或者拖动才能完全显示。当然还有一些客户也可能单纯的不习惯使用区域缩放来满足大量类目的显示。
 
-
 <iframe src="https://pic-1255740060.cos.ap-shanghai.myqcloud.com/MarkDown/img/20211209114750.html" style="height:400px" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
 
 
