@@ -1,4 +1,4 @@
-# 创建开发项目
+## 创建开发项目
 
 1.   创建一个新的空项目文件夹 plugin-demo
 
@@ -12,13 +12,13 @@
 
 ![image-20220704170725211](https://pic-1255740060.cos.ap-shanghai.myqcloud.com/MarkDown/img/20220704170725.png)
 
-# 文件结构
+## 文件结构
 
 ![image-20220704173031742](https://pic-1255740060.cos.ap-shanghai.myqcloud.com/MarkDown/img/20220704173031.png)
 
 
 
-# 基础启动
+## 基础启动
 
 1.下载依赖
 
@@ -34,7 +34,7 @@
 
 ![image-20220706165743759](https://pic-1255740060.cos.ap-shanghai.myqcloud.com/MarkDown/img/20220706165743.png)
 
-# 开发示例
+## 开发示例
 
 在 Umi 中，插件实际上就是一个 JS 模块，需要定义一个插件的初始化方法并默认导出
 
@@ -52,7 +52,7 @@ export default (api) => {
 
 如果插件需要发布为 npm 包，那么需要发布之前做编译，确保发布的代码里面是 ES5 的代码。
 
-# 进阶示例
+## 进阶示例
 
 通过一个完整的路由控制器插件示例来进行学习
 
@@ -62,7 +62,7 @@ export default (api) => {
 +   获取文件中导出的路由并显示在umi-ui中
 +   umi-ui中对应显示的路由更改时，文件中对应路由也更改
 
-## 获取路径
+### 获取路径
 
 通过umi的插件开发API与node的path模块获取.umirc.ts的绝对路径
 
@@ -81,7 +81,7 @@ api.logger.info('path:', getConstantsPath())
 
 ![image-20220711171856071](https://pic-1255740060.cos.ap-shanghai.myqcloud.com/MarkDown/img/20220711171903.png)
 
-## 读取内容
+### 读取内容
 
 使用node的fs模块读取文件的内容
 
@@ -96,7 +96,7 @@ fs.readFile(getConstantsPath(), (err: any, data: any) => {
 
 ![image-20220711171944824](https://pic-1255740060.cos.ap-shanghai.myqcloud.com/MarkDown/img/20220711171944.png)
 
-## 渲染内容
+### 渲染内容
 
 对前面获取的内容进行进一步的处理，然后将其传递给ui面板进行展示
 
@@ -162,11 +162,11 @@ api.callRemote({
 
 ![image-20220729085742835](https://pic-1255740060.cos.ap-shanghai.myqcloud.com/MarkDown/img/20220729085742.png)
 
-### 效果
+#### 效果
 
 ![image-20220729090028775](https://pic-1255740060.cos.ap-shanghai.myqcloud.com/MarkDown/img/20220729090028.png)
 
-## 嵌套路由
+### 嵌套路由
 
 将渲染函数改为递归，对子路由进行渲染，并保存路径数组作为路由项的索引
 
@@ -196,11 +196,11 @@ const renderList = (list: UmiRoute.RoutesList, indexArr: Array<number> = []) => 
     }
 ```
 
-### 效果
+#### 效果
 
 ![image-20220729111911215](https://pic-1255740060.cos.ap-shanghai.myqcloud.com/MarkDown/img/20220729111911.png)
 
-## 文件修改
+### 文件修改
 
 使用node的fs模块对文件进行重写与重新读取
 
@@ -231,7 +231,7 @@ function saveRoutes(fileData: string, oldRoutesStr: string, newRoutes: UmiRoute.
 
 ![image-20220729163359033](https://pic-1255740060.cos.ap-shanghai.myqcloud.com/MarkDown/img/20220729163359.png)
 
-# 附
+## 附
 
 umi3插件API地址 https://v3.umijs.org/zh-CN/plugins/api
 
